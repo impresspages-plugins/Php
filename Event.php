@@ -46,12 +46,10 @@ class Event
             $rawCode = Model::getRawCode($page->getId());
 
             if ($rawCode) {
-                ob_start();
+//                ob_start();
                 eval($rawCode);
-                $content = ob_get_contents();
-                ob_end_clean();
-
-                //return;
+//                $content = ob_get_contents();
+//                ob_end_clean();
             }
         }
     }
